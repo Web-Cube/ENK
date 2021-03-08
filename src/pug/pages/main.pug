@@ -1,0 +1,21 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Главная';
+
+block content
+	+b.SECTION.main
+		+e.slides
+			+e.slide.is-active
+				img.object-fit(src="/img/main__slide1.jpg")
+			+e.slide
+				img.object-fit(src="/img/main__slide2.jpg")
+		+e.wrap.wrap
+			+e.content
+				+e.H1.title.h1._small
+					| Производство и доставка 
+					br
+					| нерудной продукции
+				+e.desc.p24
+					| Добыча и производство высококачественных нерудных строительных материалов
+				+btn(href="#recall") Заказать звонок

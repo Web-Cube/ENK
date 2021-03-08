@@ -1,0 +1,82 @@
+.content p,
+.p,
+.content li,
+.li {
+	font-size: 18rem;
+	line-height: 140%;
+}
+
+.content ul,
+.content ol {
+}
+
+.content b,
+.b {
+	font-weight: bold;
+}
+
+.content strong,
+.strong {
+	font-weight: bold;
+}
+
+.content a,
+.a {
+}
+
+.h1,
+.content h1,
+.h2,
+.content h2,
+.h3,
+.content h3,
+.h4,
+.content h4,
+.h5,
+.content h5,
+.h6,
+.content h6 {
+	font-weight: bold;
+}
+
+.h1,
+.content h1 {
+	font-size: 54rem;
+	line-height: 66/54*1;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	&_small {
+		font-size: 48rem;
+		line-height: 59/48*1;
+	}
+}
+
+.h2,
+.content h2 {
+	font-size: 48rem;
+	line-height: 59/48*1;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+}
+
+.h3,
+.content h3 {
+	font-size: 36rem;
+	line-height: 44/36*1;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+}
+
+.h4,
+.content h4 {
+	font-size: 24rem;
+	line-height: 29/24*1;
+}
+
+.p20 {
+	font-size: 20rem;
+}
+.p24 {
+	font-size: 24rem;
+	line-height: 29/24*1;
+}

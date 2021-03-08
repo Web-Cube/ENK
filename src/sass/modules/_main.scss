@@ -1,0 +1,45 @@
+.main {
+	min-height: 1050rem;
+	position: relative;
+	padding: 240rem 0 100rem 0;
+	overflow: hidden;
+	color: #fff;
+	
+	&__slides, &__slide {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__slides {
+		z-index: 1;
+	}
+	
+	&__slide {
+		opacity: 0;
+		visibility: hidden;
+		transition: ease .3s;
+		&.is-active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	
+	&__wrap {
+		z-index: 2;
+	}
+	
+	&__title {
+		max-width: 800rem;
+	}
+	
+	&__desc {
+		margin-top: 40rem;
+		max-width: 605rem;
+	}
+	
+	&__btn {
+		margin-top: 50rem;
+	}
+}
