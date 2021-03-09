@@ -1,0 +1,84 @@
+.vantage {
+	padding: 100rem 0;
+	
+	&__row {
+		max-width: 994rem;
+		margin: auto;
+	}
+	
+	&__list {
+		width: 310rem;
+	}
+	&__content {
+		width: 541rem;
+	}
+	
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 60rem;
+		}
+		&-number {
+			font-size: 60rem;
+			line-height: 70/60*1;
+			color: $red;
+			font-weight: bold;
+		}
+		&-text {
+			margin-top: 10rem;
+			font-weight: 300;
+		}
+	}
+	
+	&__desc {
+		font-weight: 300;
+		&_border {
+			margin-top: 30rem;
+			padding-top: 30rem;
+			border-top: 3px solid $red;
+		}
+	}
+	&__title {
+		margin-bottom: 50rem;
+	}
+	
+	@include max-screen($small_tablet) {
+		&__content {
+			width: 500rem;
+		}
+	}
+	
+	@include max-screen(700px) {
+		padding: 80rem 0;
+		
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 30rem;
+			}
+		}
+		
+		&__content {
+			margin-top: 50rem;
+			width: 100%;
+		}
+		
+		&__title {
+			margin-bottom: 30rem;
+		}
+		
+		&__desc {
+			&_border {
+				margin-top: 20rem;
+				border-top-width: 1px;
+				padding-top: 20rem;
+			}
+		}
+	}
+	
+	@include max-screen($small_mobile) {
+		&__item {
+			&-number {
+				font-size: 50rem;
+			}
+		}
+	}
+}

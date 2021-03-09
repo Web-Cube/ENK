@@ -4,12 +4,14 @@ append vars
 	- title = 'Главная';
 
 block content
-	+b.SECTION.main
+	+b.main
 		+e.slides
-			+e.slide.is-active
+			+e.slide.js-main-slide.is-active
 				img.object-fit(src="/img/main__slide1.jpg")
-			+e.slide
+			+e.slide.js-main-slide
 				img.object-fit(src="/img/main__slide2.jpg")
+			+e.slide.js-main-slide
+				img.object-fit(src="/img/main__slide3.jpg")
 		+e.wrap.wrap
 			+e.content
 				+e.H1.title.h1._small
@@ -19,3 +21,38 @@ block content
 				+e.desc.p24
 					| Добыча и производство высококачественных нерудных строительных материалов
 				+btn(href="#recall") Заказать звонок
+			+e.list.flex
+				+e.item.js-main-item
+					+e.item-head
+						+e.item-icon
+							img(src="/app/img/main__icon1.svg")
+						+e.item-title.h4
+							| Сеть карьеров 
+							br
+							| по всей стране
+					+e.item-text
+						| Наша компания входит в число крупнейших игроков на рынке горнодобывающей отрасли
+				+e.item.js-main-item
+					+e.item-head
+						+e.item-icon
+							img(src="/app/img/main__icon2.svg")
+						+e.item-title.h4
+							| Низкие цены 
+							br
+							| от производителя
+					+e.item-text
+						| Оптимизированная логистика и отсутствие посредников позволяет снизить общую стоимость заказов
+				+e.item.js-main-item
+					+e.item-head
+						+e.item-icon
+							img(src="/app/img/main__icon3.svg")
+						+e.item-title.h4
+							| Собственный 
+							br
+							| автопарк
+					+e.item-text
+						| Большой автопарки различной грузоподъемности позволяет нам оперативно выполнять все заказы
+	include ../layouts/vantage
+	include ../layouts/scope
+	include ../layouts/strategy
+	include ../layouts/partners

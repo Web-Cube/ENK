@@ -25,10 +25,23 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		transition: ease .2s;
 		svg {
 			width: 6rem;
 			height: 10rem;
 			fill: #fff;
+			transition: ease .2s;
+		}
+	}
+	
+	&:hover {
+		border-color: $red;
+		color: $red;
+		.btn__arrow {
+			background: rgba($red, .4);
+			svg {
+				fill: $red;
+			}
 		}
 	}
 }

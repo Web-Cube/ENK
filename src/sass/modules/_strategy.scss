@@ -1,0 +1,28 @@
+.strategy {
+	background: url(/img/strategy__bg.jpg) top no-repeat;
+	background-size: auto 100%;
+	color: #fff;
+	min-height: 403rem;
+	display: flex;
+	align-items: center;
+	padding: 100rem 0;
+	
+	&__content {
+		width: 100%;
+		max-width: 720rem;
+	}
+	
+	&__text {
+		margin-top: 20rem;
+	}
+	
+	@include max-screen($small_tablet) {
+		padding: 70rem 0 60rem 0;
+		&__content {
+			max-width: none;
+		}
+		&__play {
+			margin-top: 30rem;
+		}
+	}
+}

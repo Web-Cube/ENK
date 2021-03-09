@@ -7,7 +7,8 @@
 
 .wrap {
 	padding: 0 30rem;
-	max-width: 1230rem;
+	width: 100%;
+	max-width: 1260rem;
 	margin: auto;
 	position: relative;
 	
@@ -24,17 +25,17 @@ html {
 
 html {
 	font-size: 1px; // 1rem = 1px
+	
+	&.is-lock {
+		overflow: hidden;
+		margin-right: 15px;
+	}
 
 	@include max-screen($small_desktop) {
 		font-size: 100vw / (1200/1);
 	}
 	@include max-screen($small_tablet) {
 		font-size: .85px;
-	}
-	
-	&.is-lock {
-		overflow: hidden;
-		margin-right: 15px;
 	}
 	
 	@include max-screen($large_tablet) {
@@ -52,6 +53,10 @@ body {
 	&.js-lock {
 		overflow-x: hidden;
 		overflow-y: scroll;
+	}
+	
+	@include max-screen($small_tablet) {
+		font-size: 16rem;
 	}
 }
 

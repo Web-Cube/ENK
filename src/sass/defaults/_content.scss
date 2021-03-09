@@ -80,3 +80,42 @@
 	font-size: 24rem;
 	line-height: 29/24*1;
 }
+
+@include max-screen($large_mobile) {
+	.h1,
+	.content h1 {
+		font-size: 40rem;
+	}
+	.h2,
+	.content h2 {
+		font-size: 35rem;
+	}
+	.h3,
+	.content h3 {
+		font-size: 30rem;
+	}
+	.p24 {
+		font-size: 22rem;
+	}
+}
+
+@include max-screen($small_mobile) {
+	.h1,
+	.content h1 {
+		font-size: 36rem;
+	}
+	.h2,
+	.content h2 {
+		font-size: 30rem;
+	}
+	.h3,
+	.content h3 {
+		font-size: 26rem;
+	}
+	.p24 {
+		font-size: 20rem;
+	}
+	.p20 {
+		font-size: 18rem;
+	}
+}
