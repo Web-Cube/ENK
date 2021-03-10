@@ -1,0 +1,103 @@
+.footer {
+	color: $gray;
+	padding: 40rem 0;
+	&__left {
+		max-width: 420rem;
+	}
+	&__copyright {
+		font-weight: 300;
+		margin-bottom: 13rem;
+	}
+	
+	&__polity {
+		font-size: 14rem;
+		line-height: 140%;
+		font-weight: 300;
+	}
+	
+	&__contacts {
+		max-width: 220rem;
+		svg {
+			fill: $gray;
+		}
+		&-item {
+			&:not(:last-child) {
+				margin-bottom: 10rem;
+			}
+		}
+	}
+	
+	&__right {
+		max-width: 220rem;
+	}
+	
+	&__phone {
+		display: inline-flex;
+		align-items: center;
+		&-icon {
+			width: 20rem;
+			min-width: 20rem;
+			height: 20rem;
+			margin-right: 12rem;
+		}
+	}
+	
+	&__email {
+		display: inline-flex;
+		align-items: center;
+		&-icon {
+			width: 20rem;
+			min-width: 20rem;
+			height: 18rem;
+			margin-right: 12rem;
+		}
+	}
+	
+	&__social {
+		justify-content: center;
+		margin-bottom: 12rem;
+	}
+	
+	&__develop {
+		font-size: 14rem;
+		line-height: 140%;
+		font-weight: 300;
+		a {
+			font-weight: bold;
+		}
+	}
+	@include max-screen(700px) {
+		&__left {
+			max-width: 300rem;
+		}
+	}
+	
+	@include max-screen($large_mobile) {
+		&__left {
+			order: 3;
+			max-width: none;
+			width: 100%;
+			margin-top: 20rem;
+		}
+		&__right {
+			width: 100%;
+			max-width: none;
+			margin-top: 20rem;
+		}
+		&__social {
+			justify-content: flex-start;
+		}
+		
+		&__contacts {
+			display: flex;
+			max-width: none;
+			width: 100%;
+			&-item {
+				&:not(:last-child) {
+					margin-right: 30rem;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

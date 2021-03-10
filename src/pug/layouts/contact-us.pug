@@ -1,0 +1,27 @@
++b.contact-us
+	+e.wrap.wrap
+		+e.row.flex
+			+e.column._left
+				+e.H2.title.h3
+					| СвЯжитесь 
+					br
+					| с нами
+				+e.text.p20
+					| Задайте вопрос, а мы вернёмся с ответом. Пожалуйста, проверьте данные перед отправкой. Можете отправить сообщение анонимно.
+			+e.column._right
+				+e.FORM.form(action="/app/mail")
+					+e.form-row.flex
+						+e.form-column
+							+e.field.field__
+								+e.INPUT.input._white(type="text" name="name" placeholder="Введите имя*" required)
+						+e.form-column
+							+e.field.field__
+								+e.INPUT.input._white(type="email" name="email" placeholder="Введите e-mail*" required)
+					+e.field.field__
+						+e.TEXTAREA.textarea._white(name="mess" placeholder="Ваше сообщение*" required)
+					+e.form-bottom
+						+e.polity
+							| Ваши данные надежно защищены 
+							br
+							a(href="#") политикой конфиденциальности
+						+btn(false) Отправить

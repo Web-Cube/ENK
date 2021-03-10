@@ -1,0 +1,97 @@
+.contact-us {
+	padding: 109rem 0 100rem 0;
+	background: url(/img/contact-us__bg.jpg) top no-repeat;
+	background-size: auto 100%;
+	min-height: 444rem;
+	overflow: hidden;
+	color: #fff;
+	
+	&__row {
+		margin: 0 -20rem;
+	}
+	
+	&__column {
+		width: 50%;
+		padding: 0 20rem;
+	}
+	
+	&__text {
+		margin-top: 20rem;
+		max-width: 370rem;
+	}
+	
+	&__form {
+		&-row {
+			margin: 0 -10rem;
+		}
+		&-column {
+			padding: 0 10rem;
+			width: 50%;
+		}
+		&-bottom {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	&__polity {
+		font-size: 14rem;
+		line-height: 120%;
+		font-weight: 300;
+		a {
+			text-decoration: underline;
+		}
+	}
+	
+	@include max-screen(700px) {
+		padding: 70rem 0;
+		&__column {
+			width: 100%;
+		}
+		
+		&__title {
+			br {
+				display: none;
+			}
+		}
+		
+		&__text {
+			max-width: none;
+		}
+		
+		&__form {
+			margin-top: 30rem;
+		}
+	}
+	
+	@include max-screen($small_mobile) {
+		&__form {
+			&-column {
+				width: 100%;
+			}
+		}
+		
+		&__polity {
+			padding-right: 20rem;
+			br {
+				display: none;
+			}
+		}
+	}
+	
+	@include max-screen(359px) {
+		&__form {
+			&-bottom {
+				display: block;
+			}
+		}
+		&__polity {
+			padding-right: 0;
+		}
+		
+		&__btn {
+			width: 100%;
+			margin-top: 20rem;
+		}
+	}
+}
