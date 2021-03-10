@@ -1,0 +1,68 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Компания';
+
+block content
+	+b.page-head
+		+e.bg
+			img.object-fit(src="/img/main__slide2.jpg")
+		+e.wrap.wrap
+			+e.row.flex
+				+e.column._left
+					+e.H1.title.h1 Компания
+				+e.column._left
+					+e.text.p20
+						| По праву - крупнейшее предприятие-производитель щебня в Смоленской области.
+	.bg-light-gray
+		+b.mission._first
+			+e.wrap.wrap
+				+e.row.flex._justify
+					+e.column._content
+						+e.H2.title.h3
+							| Миссия
+							br
+							| компании
+						+e.text.p24
+							| Обеспечение поступательного развития компании как одного из крупнейших российских производителей нерудной продукции путём рационального использования природных ресурсов и корпоративной социальной ответственности.
+					+e.column._img
+						+e.img
+							img.object-fit(src="/img/mission__img.jpg")
+		include ../layouts/strategy
+		+b.mission._second
+			+e.wrap.wrap
+				+e.row.flex._justify
+					+e.column._img
+						+e.img
+							img.object-fit(src="/img/mission__img2.jpg")
+					+e.column._content
+						+e.H2.title.h3
+							| Социальная 
+							br
+							| ответсвенность
+						+e.text.p24
+							| Корпоративная социальная ответственность ООО «Евразийская нерудная компания» направлена на создание эффективных и безопасных рабочих мест, минимизацию воздействия на окружающую среду и поддержание благоприятной среды в регионах деятельности Компании, социальную поддержку работников и членов их семей.
+		+b.worth
+			+e.wrap.wrap
+				+e.H2.title.h3
+					| Наши 
+					br
+					| ценности
+				+e.list.flex
+					+e.item
+						+e.content
+							+e.item-title.h4 Ответственность
+							+e.item-text.p20
+								| Готовность выполнять обязательства, принимать решения и отвечать за их результат
+					+e.item
+						+e.content
+							+e.item-title.h4 Эффективность
+							+e.item-text.p20
+								| Умение достигать необходимых результатов точно в срок при оптимальных затратах
+					+e.item
+						+e.content
+							+e.item-title.h4 Развитие
+							+e.item-text.p20
+								| Эффективный рост и 
+								br
+								| обновление производства, внедрение самых современных технологий

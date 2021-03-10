@@ -1,0 +1,104 @@
+.mission {
+	padding: 80rem 0;
+	overflow: hidden;
+	
+	&__row {
+		margin: 0 -20rem;
+	}
+	
+	&__column {
+		padding: 0 20rem;
+		&_content {
+			width: 5/12*100%;
+		}
+		&_img {
+			width: 50%;
+		}
+	}
+	
+	&_first {
+		padding-top: 100rem;
+		.mission {
+			&__title {
+				position: relative;
+				&:before {
+					content: '';
+					display: block;
+					height: 3px;
+					background: $red;
+					width: 320rem;
+					position: absolute;
+					right: 100%;
+					margin-right: 40rem;
+					bottom: 8rem;
+				}
+			}
+		}
+	}
+	
+	&__img {
+		position: relative;
+		overflow: hidden;
+		padding-top: 500/580*100%;
+	}
+	
+	&__text {
+		margin-top: 40rem;
+	}
+	
+	@include max-screen($small_tablet) {
+		&_first {
+			padding-top: 80rem;
+			.mission {
+				&__title {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+		&__column {
+			&_content {
+				width: 50%;
+			}
+		}
+	}
+	
+	@include max-screen(700px) {
+		&__column {
+			&_content {
+				width: 100%;
+			}
+			&_img {
+				width: 100%;
+				margin-top: 30rem;
+			}
+		}
+		
+		&__title {
+			br {
+				display: none;
+			}
+		}
+		
+		&__text {
+			margin-top: 20rem;
+		}
+		&_second {
+			.mission {
+				&__column {
+					&_content {
+						order: 1;
+					}
+					&_img {
+						order: 2;
+					}
+				}
+			}
+		}
+	}
+	
+	@include max-screen($small_mobile) {
+		padding: 70rem 0;
+	}
+}
