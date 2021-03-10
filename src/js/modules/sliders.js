@@ -21,8 +21,8 @@ var sliders = {
 		smartSpeed: 600,
 		margin: 20,
 		navText: [
-			'<svg class="icon icon-arrowLeft" viewBox="0 0 12 19"><use xlink:href="/app/icons/sprite.svg#arrowLeft"></use></svg>',
-			'<svg class="icon icon-arrowRight" viewBox="0 0 12 19"><use xlink:href="/app/icons/sprite.svg#arrowRight"></use></svg>',
+			'<svg class="icon icon-prev" viewBox="0 0 18 16"><use xlink:href="/app/icons/sprite.svg#prev"></use></svg>',
+			'<svg class="icon icon-next" viewBox="0 0 18 16"><use xlink:href="/app/icons/sprite.svg#next"></use></svg>',
 		],
 	},
 

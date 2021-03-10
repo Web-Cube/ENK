@@ -1,0 +1,257 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Продукция';
+
+block content
+	+b.page-head
+		+e.bg
+			img.object-fit(src="/img/main__slide3.jpg")
+		+e.wrap.wrap
+			+e.row.flex
+				+e.column._left
+					+e.H1.title.h1 Продукция
+				+e.column._left
+					+e.text.p20
+						| Мы производим широкий ассортимент высококачественной нерудной продукци и можем поставить его в любой соседний регион.
+	+b.catalog
+		+e.product.product__
+			+e.wrap.wrap
+				+e.head.flex._justify
+					+e.head-column._left
+						+e.gallery.js-slider.js-gallery(
+							data-settings=`{
+								"smartSpeed": 500,
+								"items": 1,
+								"nav": true,
+								"dots": false,
+								"margin": 1
+							}`)
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide1_big.jpg")
+									img.object-fit(src="/img/product__slide1.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide2_big.jpg")
+									img.object-fit(src="/img/product__slide2.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide3_big.jpg")
+									img.object-fit(src="/img/product__slide3.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide4_big.jpg")
+									img.object-fit(src="/img/product__slide4.jpg")
+					+e.head-column._right
+						+e.content
+							+e.H3.title.h3 ЩЕбЕНЬ
+							+e.text.p20
+								| Неорганический, зернистый, сыпучий материал с зёрнами размером свыше 5 мм, получаемый дроблением горных пород, гравия и валунов. Щебень отличается высокой прочностью и морозостойкостью.
+				+e.table
+					table
+						thead
+							tr
+								th Продукт
+								th Коэффициент
+								th Цена за тонну
+								th Цена за м
+									sup 3
+						tbody
+							tr
+								td Гравийный щебень 5-20
+								td 1.58
+								td
+									strong 975 руб.
+								td
+									strong 1200 руб.
+							tr
+								td Гравийный щебень 20-40
+								td 1.43
+								td
+									strong 670 руб.
+								td
+									strong 1150 руб.
+							tr
+								td Гравийный щебень 40-70
+								td 1.29
+								td
+									strong 830 руб.
+								td
+									strong 1370 руб.
+		+e.product.product__
+			+e.wrap.wrap
+				+e.head.flex._justify
+					+e.head-column._left
+						+e.gallery.js-slider.js-gallery(
+							data-settings=`{
+								"smartSpeed": 500,
+								"items": 1,
+								"nav": true,
+								"dots": false,
+								"margin": 1
+							}`)
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide2_big.jpg")
+									img.object-fit(src="/img/product__slide2.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide3_big.jpg")
+									img.object-fit(src="/img/product__slide3.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide4_big.jpg")
+									img.object-fit(src="/img/product__slide4.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide1_big.jpg")
+									img.object-fit(src="/img/product__slide1.jpg")
+					+e.head-column._right
+						+e.content
+							+e.H3.title.h3 Гравий
+							+e.text.p20
+								| Неорганический, зернистый, сыпучий материал с зёрнами размером свыше 5 мм, получаемый дроблением горных пород, гравия и валунов. Щебень отличается высокой прочностью и морозостойкостью.
+				+e.table
+					table
+						thead
+							tr
+								th Продукт
+								th Коэффициент
+								th Цена за тонну
+								th Цена за м
+									sup 3
+						tbody
+							tr
+								td Гравийный щебень 5-20
+								td 1.58
+								td
+									strong 975 руб.
+								td
+									strong 1200 руб.
+							tr
+								td Гравийный щебень 20-40
+								td 1.43
+								td
+									strong 670 руб.
+								td
+									strong 1150 руб.
+							tr
+								td Гравийный щебень 40-70
+								td 1.29
+								td
+									strong 830 руб.
+								td
+									strong 1370 руб.
+		+e.product.product__
+			+e.wrap.wrap
+				+e.head.flex._justify
+					+e.head-column._left
+						+e.gallery.js-slider.js-gallery(
+							data-settings=`{
+								"smartSpeed": 500,
+								"items": 1,
+								"nav": true,
+								"dots": false,
+								"margin": 1
+							}`)
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide3_big.jpg")
+									img.object-fit(src="/img/product__slide3.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide4_big.jpg")
+									img.object-fit(src="/img/product__slide4.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide1_big.jpg")
+									img.object-fit(src="/img/product__slide1.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide2_big.jpg")
+									img.object-fit(src="/img/product__slide2.jpg")
+					+e.head-column._right
+						+e.content
+							+e.H3.title.h3 Песок
+							+e.text.p20
+								| Неорганический, зернистый, сыпучий материал с зёрнами размером свыше 5 мм, получаемый дроблением горных пород, гравия и валунов. Щебень отличается высокой прочностью и морозостойкостью.
+				+e.table
+					table
+						thead
+							tr
+								th Продукт
+								th Коэффициент
+								th Цена за тонну
+								th Цена за м
+									sup 3
+						tbody
+							tr
+								td Гравийный щебень 5-20
+								td 1.58
+								td
+									strong 975 руб.
+								td
+									strong 1200 руб.
+							tr
+								td Гравийный щебень 20-40
+								td 1.43
+								td
+									strong 670 руб.
+								td
+									strong 1150 руб.
+							tr
+								td Гравийный щебень 40-70
+								td 1.29
+								td
+									strong 830 руб.
+								td
+									strong 1370 руб.
+		+e.product.product__
+			+e.wrap.wrap
+				+e.head.flex._justify
+					+e.head-column._left
+						+e.gallery.js-slider.js-gallery(
+							data-settings=`{
+								"smartSpeed": 500,
+								"items": 1,
+								"nav": true,
+								"dots": false,
+								"margin": 0
+							}`)
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide4_big.jpg")
+									img.object-fit(src="/img/product__slide4.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide1_big.jpg")
+									img.object-fit(src="/img/product__slide1.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide2_big.jpg")
+									img.object-fit(src="/img/product__slide2.jpg")
+							+e.slide
+								+e.A.preview(href="/app/img/product__slide3_big.jpg")
+									img.object-fit(src="/img/product__slide3.jpg")
+					+e.head-column._right
+						+e.content
+							+e.H3.title.h3 Смеси
+							+e.text.p20
+								| Неорганический, зернистый, сыпучий материал с зёрнами размером свыше 5 мм, получаемый дроблением горных пород, гравия и валунов. Щебень отличается высокой прочностью и морозостойкостью.
+				+e.table
+					table
+						thead
+							tr
+								th Продукт
+								th Коэффициент
+								th Цена за тонну
+								th Цена за м
+									sup 3
+						tbody
+							tr
+								td Гравийный щебень 5-20
+								td 1.58
+								td
+									strong 975 руб.
+								td
+									strong 1200 руб.
+							tr
+								td Гравийный щебень 20-40
+								td 1.43
+								td
+									strong 670 руб.
+								td
+									strong 1150 руб.
+							tr
+								td Гравийный щебень 40-70
+								td 1.29
+								td
+									strong 830 руб.
+								td
+									strong 1370 руб.

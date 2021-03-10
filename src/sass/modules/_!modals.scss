@@ -13,10 +13,6 @@
 	display: none;
 }
 
-.mfp-image-holder {
-	background: rgba(0, 19, 43, 0.51);
-}
-
 .mfp-content{
 	@extend .clear;
 }
@@ -46,16 +42,9 @@
 
 .mfp-figure {
 	max-height: 90vh;
-	.modals__close {
-		right: -12rem;
-		top: -50rem;
-		background: none;
-		fill: #fff;
-		border: 0;
-		width: 48rem;
-	}
 	img.mfp-img {
 		max-height: 90vh !important;
+		padding: 10px 0;
 	}
 }
 
@@ -143,6 +132,9 @@
 		}
 		.modals {
 			transform: translateY(0);
+			opacity: 1;
+		}
+		.mfp-figure{
 			opacity: 1;
 		}
 	}
