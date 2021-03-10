@@ -134,6 +134,23 @@
 		overflow-x: hidden;
 		overflow-y: auto;
 	}
+	&_gray {
+		color: $default;
+		position: relative;
+		.header {
+			&__contacts {
+				color: $gray;
+				svg {
+					fill: $gray;
+				}
+			}
+			&__burger {
+				&-line {
+					background: $default;
+				}
+			}
+		}
+	}
 	
 	@include max-screen($small_tablet) {
 		&__mobile {

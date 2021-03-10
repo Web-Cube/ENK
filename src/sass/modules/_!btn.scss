@@ -35,6 +35,17 @@
 		}
 	}
 	
+	&_red {
+		border-color: $red;
+		color: $red;
+		.btn__arrow {
+			background: rgba($red, .4);
+			svg {
+				fill: $red;
+			}
+		}
+	}
+	
 	/*&:hover {
 		border-color: $red;
 		color: $red;
