@@ -1,0 +1,130 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Вакансии';
+
+block content
+	include ../layouts/header
+	+b.page-head
+		+e.bg
+			img.object-fit(src="/img/vacancy__bg.jpg")
+		+e.wrap.wrap
+			+e.row.flex
+				+e.column._left
+					+e.H1.title.h1 Вакансии
+				+e.column._left
+					+e.text.p20
+						| Успех компании — тысячи личных и профессиональных успехов каждого. Присоединяйтесь к нашей компанде!
+	+b.vacancy.bg-light-gray
+		+e.wrap.wrap
+			+e.list.flex
+				+e.item
+					+e.item-title
+						| Механик по ремонту и выпуску на линию автотранспорта
+					+e.item-price от 60 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 1 года
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right 5/2 с 08:00 до 17:00
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Механик по ремонту горного оборудования
+					+e.item-price от 40 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 5 лет
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right 5/2 с 08:00 до 17:00
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Инженер по охране окружающей среды - эколог
+					+e.item-price от 30 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 3 лет
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right сменный, 2/2
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Инженер по подготовке производства
+					+e.item-price от 50 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 2 лет
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right 5/2 с 08:00 до 17:00
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Мастер по ремонту аспирации и вентиляции
+					+e.item-price от 70 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 1 года
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right сменный, 2/2
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Мастер цеха переработки извести
+					+e.item-price от 90 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 1 года
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right 5/2 с 08:00 до 17:00
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Мастер погрузочно-разгрузочных работ
+					+e.item-price от 40 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right не требуется
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right сменный, 2/2
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Машинист экскаватора гидравлического
+					+e.item-price от 35 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 2 лет
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right 5/2 с 08:00 до 17:00
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+				+e.item
+					+e.item-title
+						| Машинист-инструктор локомотивных бригад
+					+e.item-price от 80 000 руб.
+					+e.item-table
+						+e.item-row
+							+e.item-column._left Опыт:
+							+e.item-column._right более 3 лет
+						+e.item-row
+							+e.item-column._left График работы:
+							+e.item-column._right сменный, 2/2
+					+btn(class="_red js-modal" href="#vacancy") Подробнее
+			+e.bottom.flex._center
+				+e.A.more(href="#") Показать еще

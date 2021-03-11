@@ -14,3 +14,17 @@
 				| Ваши данные надежно защищены 
 				a(href="#") политикой конфиденциальности
 			+btn(false) заказать
++b.modals._form.mfp-hide#vacancy
+	+e.FORM.form.form__(action="/app/mail")
+		+e.title.h4 Оставьте свои данные
+		+e.text
+			| Наш специалист свяжется с вами в течении 15 минут для уточнения информации.
+		+e.field.field__
+			+e.INPUT.input(type="tel" name="phone" placeholder="+7 (999) 797-77-97*" required)
+		+e.field.field__
+			+e.TEXTAREA.textarea(name="mess" placeholder="Ваше сообщение*" required)
+		+e.bottom
+			+e.polity
+				| Ваши данные надежно защищены 
+				a(href="#") политикой конфиденциальности
+			+btn(false) Отправить
