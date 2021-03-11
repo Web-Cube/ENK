@@ -1,0 +1,51 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Сертификаты';
+
+block content
+	include ../layouts/header_gray
+	+b.certificate.bg-light-gray
+		+e.wrap.wrap
+			+e.head.flex
+				+e.head-column._left
+					+e.H1.title.h1 Сертификаты
+				+e.head-column._right
+					+e.text.p20 Сертификаты соответсвия и другие документы компании
+			+e.list.flex.js-gallery
+				+e.A.item(href="/app/img/serti1_big.jpg")
+					+e.item-preview
+						img.object-fit(src="/img/serti1.jpg")
+					+e.item-info
+						+e.item-title Сертификат соответсвия
+						+e.item-text.p20 Песок для строительных работ
+				+e.A.item(href="/app/img/serti2_big.jpg")
+					+e.item-preview
+						img.object-fit(src="/img/serti2.jpg")
+					+e.item-info
+						+e.item-title Сертификат соответсвия
+						+e.item-text.p20 Гравий для асфальтирования
+				+e.A.item(href="/app/img/serti3_big.jpg")
+					+e.item-preview
+						img.object-fit(src="/img/serti3.jpg")
+					+e.item-info
+						+e.item-title Сертификат соответсвия
+						+e.item-text.p20 Щебень для трубоукладоыных работ
+				+e.A.item(href="/app/img/serti4_big.jpg")
+					+e.item-preview
+						img.object-fit(src="/img/serti4.jpg")
+					+e.item-info
+						+e.item-title Протокол испытаний
+						+e.item-text.p20 Песок
+				+e.A.item(href="/app/img/serti5_big.jpg")
+					+e.item-preview
+						img.object-fit(src="/img/serti5.jpg")
+					+e.item-info
+						+e.item-title Протокол испытаний
+						+e.item-text.p20 Щебень
+				+e.A.item(href="/app/img/serti6_big.jpg")
+					+e.item-preview
+						img.object-fit(src="/img/serti6.jpg")
+					+e.item-info
+						+e.item-title Протокол радиогеологии
+	include ../layouts/docs

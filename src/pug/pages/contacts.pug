@@ -1,0 +1,46 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Контакты';
+
+block content
+	include ../layouts/header_gray
+	+b.contacts.bg-light-gray
+		+e.wrap.wrap
+			+e.H1.title.h1 Контакты
+			+e.row.flex._justify
+				+e.info
+					+e.desc.p20
+						strong 117321, Москва, Ленинский пр-т, 101А
+					+e.list.flex
+						+e.item
+							+e.item-text.p20 Тел.: 
+								a(href="tel:+74957979557") +7 (495) 797 95 57
+							+e.item-text Факс.: 
+								a(href="tel:+74957979557") +7 (495) 797 95 57
+						+e.item
+							+e.item-text.p20 E-mail: 
+							+e.item-text.p20
+								a(href="mailto:info@enk.com") info@enk.com
+						+e.item
+							+e.item-text.p20 Время работы:
+							+e.item-text.p20 Пн-пт, с 9:00 до 18:00
+						+e.item
+							+e.item-text.p20 Время работы карьера:
+							+e.item-text.p20 Пн-пт, с 7:00 до 19:00
+				+e.FORM.form.form__(action="/app/mail")
+					+e.title.h4 Форма обратной связи
+					+e.text
+						| Для вопросов, предложений и обращений. Можете оставить сообщение анонимно.
+					+e.field.field__
+						+e.INPUT.input(type="text" name="name" placeholder="Введите имя*" required)
+					+e.field.field__
+						+e.INPUT.input(type="email" name="email" placeholder="Введите e-mail*" required)
+					+e.field.field__
+						+e.TEXTAREA.textarea(name="mess" placeholder="Ваше сообщение*" required)
+					+e.bottom
+						+e.polity
+							| Ваши данные надежно защищены 
+							a(href="#") политикой конфиденциальности
+						+btn(false) Отправить
+		+e.map.js-map#map(data-len="55.666431", data-lng="37.514926")

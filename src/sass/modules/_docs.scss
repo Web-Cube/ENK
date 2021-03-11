@@ -1,0 +1,94 @@
+.docs {
+	padding: 87rem 0 100rem 0;
+	background: url(/img/docs__bg.jpg) top no-repeat;
+	background-size: auto 100%;
+	color: #fff;
+	min-height: 486rem;
+	
+	&__column {
+		&_left {
+			width: 680/1200*100%;
+			padding-top: 13rem;
+			padding-right: 20rem;
+		}
+		&_right {
+			width: 520/1200*100%;
+		}
+	}
+	
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 24rem;
+		}
+	}
+	
+	&__link {
+		display: inline-flex;
+		min-height: 32rem;
+		padding-left: 45rem;
+		background: url(/img/pdf.svg) 0 0 no-repeat;
+		background-size: 32rem 32rem;
+		padding-top: 5rem;
+	}
+	
+	&__desc {
+		padding: 13rem 0 13rem 35rem;
+		border-left: 3px solid $red;
+		line-height: 140%;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1rem;
+	}
+	
+	&__download {
+		margin-top: 35rem;
+		margin-left: 5rem;
+	}
+	
+	@include max-screen($small_tablet) {
+		padding: 80rem 0;
+		&__column {
+			&_left {
+				width: 100%;
+				padding-right: 0;
+				order: 2;
+				padding-top: 0;
+				margin-top: 30rem;
+			}
+			&_right {
+				width: 100%;
+				order: 1;
+			}
+		}
+		
+		&__desc {
+			padding: 0;
+			border-left: 0;
+		}
+	}
+	
+	@include max-screen($small_mobile) {
+		padding: 70rem 0;
+		
+		&__desc {
+			letter-spacing: normal;
+			text-transform: none;
+		}
+		
+		&__link {
+			padding-left: 41rem;
+			background-size: 28rem 28rem!important;
+			padding-top: 0;
+		}
+		
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 20rem;
+			}
+		}
+		&__download {
+			margin-left: 2rem;
+			margin-top: 30rem;
+		}
+	}
+}
